@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Register</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: "Martian Mono", monospace;
+      }
+
+      section {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(145deg, #fe4160, #fefb41);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 400px;
+        height: 350px;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.38);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #111;
+
+        margin: 15px 0;
+      }
+
+      .container h2 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #333;
+
+        margin-bottom: 7px;
+      }
+
+      .container form {
+        width: 100%;
+        height: 200px;
+        /* background-color: #000; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form .content {
+        width: 85%;
+        height: 48px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 15px;
+
+        margin: 10px 0;
+
+        display: flex;
+        justify-content: default;
+        align-items: center;
+
+        transition: all 0.3s;
+
+        cursor: pointer;
+      }
+
+      .content:hover {
+        transform: scale(1.35);
+      }
+
+      .content i {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        color: #bbb;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 400px;
+        height: 100%;
+
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background: #fff;
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Martian Mono", monospace;
+        color: #111;
+        border: none;
+      }
+
+      input[type="email"]::placeholder,
+      input[type="password"]::placeholder {
+        background-color: transparent;
+        font-size: 1rem;
+        color: #bbb;
+      }
+
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+      }
+
+      form a {
+        width: 85%;
+        text-decoration: none;
+        text-align: center;
+        background-color: #fefb41;
+        border-radius: 15px;
+        color: #222;
+        padding: 13px 30px;
+        margin-top: 8px;
+
+        transition: all 0.3s;
+      }
+
+      form a:hover {
+        background-color: #fe4141f4;
+      }
+
+      .container p {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      .container .up {
+        color: #fe4160;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin-left: 8px;
+      }
+
+      .container .up:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>login</h1>
+        <h2>Please enter your details</h2>
+        <form action="" method="post">
+          <div class="content">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <input
+              type="email"
+              name="gmail"
+              id="mail"
+              class=""
+              placeholder="MPPN@gmail.com"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="content">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="password"
+              name="pw"
+              id="ps"
+              class=""
+              placeholder="Password+8"
+            />
+          </div>
+          <a href="#">Login</a>
+        </form>
+        <p>Odiodoloremque quod?<a href="#" class="up">sign up</a></p>
+      </div>
+    </section>
+  </body>
+</html>
